@@ -9,8 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            
+        NavigationView{
+            VStack{
+                NavigationLink( destination:  BMI(), label: {
+                    Text("First View")
+                    
+                }) .navigationTitle("Nav Title")
+            }
         }
     }
 }
